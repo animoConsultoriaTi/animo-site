@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +13,21 @@
     <meta property="og:description" content="<!-- Descrição da Página no Google> -->">
     <meta property="og:url" content="<!-- URL do Site-->">
     <meta property="og:image" content="<!--URL/src/assets/img/og-image.png-->">
-    <title><%= title %></title>
+
+    <title>
+      {{title}}
+    </title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
-
-    <link rel="stylesheet" href="/assets/icons/icons.css">
     <!-- Scripts -->
-    <script src="/main.js" defer></script>
+    {{!-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide" defer></script> --}}
+    {{!-- <script src="/js/index.js" type="module" defer ></script> --}}
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Icons -->
+    <link rel="stylesheet" href="/assets/icons/icons.css" >
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/index.min.css">
   </head>
