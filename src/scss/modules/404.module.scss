@@ -1,0 +1,26 @@
+#not-found {
+  padding: 2rem;
+
+  .container {
+    max-width: 1280px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 750px;
+    }
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: filter .3s;
+
+      &:hover {
+        filter: brightness(1.3)
+      }
+    }
+  }
+}

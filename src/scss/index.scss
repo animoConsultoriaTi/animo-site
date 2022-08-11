@@ -8,7 +8,8 @@
 
 :root {
   --white: #FFFFFF;
-
+  --gray-50: #FAFAFA;
+  --gray-500: #222222;
   --blue-900: #263238;
 
 
@@ -25,8 +26,8 @@ html {
 }
 
 body {
-  background: var(--gray-900);
-  color: var(--white);
+  background: var(--gray-50);
+  color: var(--gray-500);
 }
 
 body, input, textarea, select, button {
@@ -51,3 +52,6 @@ img {
   max-width: 100%;
 }
 
+@import "./modules/header.module.scss";
+@import "./modules/footer.module.scss";
+@import "./modules/404.module.scss";
