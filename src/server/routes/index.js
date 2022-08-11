@@ -1,10 +1,15 @@
 const { Router } = require('express');
 
+const prisma = require('../database');
+
 const routes = Router();
 
-routes.get('*', (request, response) => {
+routes.get('*', async (request, response) => {
+  const services = await prisma.service.findMany();
+
   return response.render('404', {
-    title: 'Não Encontrado',
+    title: 404,
+    services,
   });
 });
 

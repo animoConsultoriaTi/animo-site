@@ -15,42 +15,12 @@
         <li data-dropdown="trigger">
           <a>Serviços</a>
           <ul data-dropdown="menu">
-                        
-                <li><a href="/service/analise-de-estrutura-de-custos-e-otimizacao">
-                    Análise de Estrutura de Custos e Otimização
-                  </a>
-                </li>
-                
-                <li><a href="/service/analise-de-viabilidade-e-projecao-financeira">
-                    Análise de Viabilidade e Projeção Financeira
-                  </a>
-                </li>
-                
-                <li><a href="/service/consultoria-de-marketing">
-                    Consultoria de Marketing
-                  </a>
-                </li>
-                
-                <li><a href="/service/precificacao">
-                    Precificação
-                  </a>
-                </li><li><a href="/service/desenvolvimento-de-sites-e-sistemas">
-                    Desenvolvimento de Sites/Sistemas
-                  </a>
-                </li>
-                
-                <li><a href="/service/indicadores-kpis-e-orcamento">
-                    Indicadores (KPIs) e Orçamento
-                  </a>
-                </li>
-                
-                <li><a href="/service/modelo-de-negocios">
-                    Modelo de Negócios
-                  </a>
-                </li>
-                
-                
-                
+            <% services.forEach(({ title, slug })=> { %>
+              <li><a href="/service/<%=slug %>">
+                  <%=title%>
+                </a>
+              </li>
+              <% }) %>
             </ul>
         </li>
         <li><a href="">Trabalhe Conosco</a></li>

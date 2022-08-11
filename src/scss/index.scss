@@ -8,9 +8,32 @@
 
 :root {
   --white: #FFFFFF;
+
   --gray-50: #FAFAFA;
   --gray-500: #222222;
+
+  --yellow-100: #fff0da;
+  --yellow-500: #f5b84a;
+
+  --green-100: #eafde7;
+  --green-500: #41d058;
+
+  --cyan-100: #e6fdfc;
+  --cyan-500: #3fcdc7;
+
+  --red-100: #fceeee;
+  --red-500: #ff6a6a;
+
+  --blue-50: #F7F9fA;
+  --blue-100: #E1EEFF;
+  --blue-500: #2483ff;
   --blue-900: #263238;
+
+  --purple-100: #d4cefd;
+  --purple-500: #7228d1;
+
+  --pink-100: #fcdbff;
+  --pink-500: #e029b8;
 
 
 }
@@ -26,7 +49,6 @@ html {
 }
 
 body {
-  background: var(--gray-50);
   color: var(--gray-500);
 }
 
@@ -52,6 +74,75 @@ img {
   max-width: 100%;
 }
 
+.card {
+  background-color: var(--white);
+  border-radius: 3px;
+  color: var(--gray-500);
+  padding: 2rem 1.5rem;
+  box-shadow: 0 0 4px #00000029;
+  
+  .icon-container {
+    width: fit-content;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    i {
+      display: block;
+      font-size: 2rem;
+      border-radius: 3px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+
+      &.icon-pie-chart {
+        background-color: var(--yellow-100);
+        color: var(--yellow-500);
+      }
+
+      &.icon-dollar-sign {
+        background-color: var(--green-100);
+        color: var(--green-500);
+      }
+
+      &.icon-trending-up {
+        background-color: var(--cyan-100);
+        color: var(--cyan-500);
+      }
+
+      &.icon-shopping-bag {
+        background-color: var(--red-100);
+        color: var(--red-500);
+      }
+
+      &.icon-globe {
+        background-color: var(--blue-100);
+        color: var(--blue-500);
+      }
+
+      &.icon-check-circle {
+        background-color: var(--purple-100);
+        color: var(--purple-500);
+      }
+
+      &.icon-compass {
+        background-color: var(--pink-100);
+        color: var(--pink-500);
+      }
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}
+
+@import "./modules/glide.module.scss";
+
 @import "./modules/header.module.scss";
+@import "./modules/ourServices.module.scss";
 @import "./modules/footer.module.scss";
+
 @import "./modules/404.module.scss";

@@ -1,10 +1,12 @@
 #footer {
+  font-size: .875rem;
   .contact-data {
     padding: 5rem 2rem;
 
     ul li {
       margin-bottom: .5rem;
     }
+
     .container {
       max-width: 1280px;
       margin-inline: auto;
@@ -20,7 +22,7 @@
       }
 
       @media (max-width: 986px) {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
       }
 
       .info-container {

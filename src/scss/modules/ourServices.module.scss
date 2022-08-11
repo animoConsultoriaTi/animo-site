@@ -1,0 +1,24 @@
+#our-services {
+  background: var(--blue-50);
+  padding: 5rem 2rem;
+
+  .container {
+    max-width: 1280px;
+    margin-inline: auto;
+
+    .info-container {
+      text-align: center;
+      margin-bottom: 2rem;
+
+      h2 {
+        font: bold 2rem "Montserrat";
+      }
+    }
+
+    .card {
+      width: 20.6rem;
+      height: 12rem;
+      margin: 1rem auto;
+    }
+  }
+}

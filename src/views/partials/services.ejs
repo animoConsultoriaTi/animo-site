@@ -1,0 +1,30 @@
+<section id="our-services">
+
+  <div class="container">
+    <div class="info-container">
+      <h2>
+        <%= title===404 ? "Nossos" : Outros %> Serviços
+      </h2>
+    </div>
+    <div class="glide" data-glide="2">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <% services.forEach(({title, slug, icon})=> { %>
+            <li class="glide__slide">
+              <a href="/service/<%=slug %>">
+                <div class="card">
+                  <div class="icon-container">
+                    <i class="icon-<%=icon %>"></i>
+                  </div>
+                  <h3>
+                    <%=title %>
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <% }) %>
+        </ul>
+      </div>
+      <div class="glide__bullets" data-glide-el="controls[nav]"></div>
+    </div>
+</section>

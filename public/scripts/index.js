@@ -1,7 +1,7 @@
 import Dropdown from './modules/dropdown.js';
 // import Message from './modules/whatsappMessage.js';
 import MenuMobile from './modules/menuMobile.js';
-// import CustomGlide from './modules/glide.js';
+import CustomGlide from './modules/glide.js';
 // import ValidateProcessForm from './modules/validateProcessForm.js';
 // import CardTextCutter from './modules/cardTextCutter.js';
 
@@ -26,6 +26,6 @@ menuMobile.init();
 // const validateForm = new ValidateProcessForm('[data-form="selectiveProcess"]');
 // validateForm.init();
 
-// const customGlide = new CustomGlide('.glide');
-// customGlide.constructor.renderBullets();
-// customGlide.init();
+const customGlide = new CustomGlide('.glide');
+customGlide.constructor.renderBullets();
+customGlide.init();
