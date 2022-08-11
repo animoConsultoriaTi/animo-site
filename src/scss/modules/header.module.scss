@@ -13,6 +13,10 @@
     .logo {
       img {
         width: 12.5rem;
+
+        @media (max-width: 425px) {
+          width: 10rem;
+        }
       }
     }
 
