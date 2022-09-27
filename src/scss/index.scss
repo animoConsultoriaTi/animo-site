@@ -1,4 +1,4 @@
-@import "./font.scss";
+@import './font.scss';
 
 * {
   margin: 0;
@@ -39,6 +39,8 @@
 }
 
 html {
+  scroll-behavior: smooth;
+
   @media (max-width: 1080px) {
     font-size: 93.75%;
   }
@@ -53,7 +55,7 @@ body {
 }
 
 body, input, textarea, select, button {
-  font: 400 1rem "Gordita", sans-serif;
+  font: 400 1rem 'Gordita', sans-serif;
 }
 
 button {
@@ -72,6 +74,12 @@ ul {
 img {
   display: block;
   max-width: 100%;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: .5rem;
 }
 
 .card {
@@ -133,16 +141,41 @@ img {
   h3 {
     text-align: center;
     margin-bottom: 1rem;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
     font-size: 1.1rem;
     font-weight: bold;
   }
 }
 
-@import "./modules/glide.module.scss";
+.call-to-action {
+  display: inline-block;
+  background-color: var(--blue-500);
+  border-radius: 3px;
+  padding: 0.75rem 1rem;
+  font-family: "Gordita Medium";
+  font-size: 0.9rem;
+  color: var(--white);
+  transition: opacity .6s;
 
-@import "./modules/header.module.scss";
-@import "./modules/ourServices.module.scss";
-@import "./modules/footer.module.scss";
+  &:hover {
+    opacity: .7;
+  }
+}
 
-@import "./modules/404.module.scss";
+// Glide
+@import './modules/glide.module.scss';
+
+// Globals
+@import './modules/header.module.scss';
+@import './modules/ourServices.module.scss';
+@import './modules/partners.module.scss';
+@import './modules/footer.module.scss';
+
+// Errors
+@import './modules/errors/404.module.scss';
+
+// Home
+@import './modules/home/hero.module.scss';
+@import './modules/home/services.module.scss';
+@import './modules/home/about.module.scss';

@@ -3,7 +3,7 @@ import Dropdown from './modules/dropdown.js';
 import MenuMobile from './modules/menuMobile.js';
 import CustomGlide from './modules/glide.js';
 // import ValidateProcessForm from './modules/validateProcessForm.js';
-// import CardTextCutter from './modules/cardTextCutter.js';
+import CardTextCutter from './modules/cardTextCutter.js';
 
 const dropdown = new Dropdown(
   '[data-dropdown="trigger"]',
@@ -17,8 +17,8 @@ const menuMobile = new MenuMobile(
 );
 menuMobile.init();
 
-// const servicesCard = new CardTextCutter('[data-textsize]');
-// servicesCard.cut();
+const servicesCard = new CardTextCutter('[data-textsize]');
+servicesCard.cut();
 
 // const whatsappMessage = new Message('.whatsapp');
 // whatsappMessage.init();
