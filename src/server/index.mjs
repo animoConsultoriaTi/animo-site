@@ -1,5 +1,5 @@
-const app = require('./app');
-const chalk = require('chalk');
+import chalk from "chalk";
+import { app } from "./app.mjs";
 
 app.listen(process.env.PORT, () => {
   console.log(
