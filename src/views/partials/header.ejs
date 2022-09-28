@@ -1,9 +1,19 @@
 <header id="header">
   <div class="container">
-    <a class="logo" href="/"><img src="/logo.svg" alt="Ânimo Consultoria"></a>
+    <a
+      class="logo"
+      href="/"
+      ><img
+        src="/logo.svg"
+        alt="Ânimo Consultoria"
+    /></a>
     <nav>
-      <div data-mobile-menu="controls" aria-controls="menu">
-        <button class="active" data-mobile-menu="button">
+      <div
+        data-mobile-menu="controls"
+        aria-controls="menu">
+        <button
+          class="active"
+          data-mobile-menu="button">
           <i class="icon-menu"></i>
         </button>
         <button data-mobile-menu="button">
@@ -15,13 +25,10 @@
         <li data-dropdown="trigger">
           <a>Serviços</a>
           <ul data-dropdown="menu">
-            <% services.forEach(({ title, slug })=> { %>
-              <li><a href="/servico/<%=slug %>">
-                  <%=title%>
-                </a>
-              </li>
-              <% }) %>
-            </ul>
+            <% services.forEach(({ attributes: { slug, title } })=> { %>
+            <li><a href="/servico/<%=slug %>"> <%=title%> </a></li>
+            <% }) %>
+          </ul>
         </li>
         <li><a href="">Trabalhe Conosco</a></li>
         <li><a href="/contato">Contato</a></li>

@@ -4,10 +4,10 @@
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
-            <% partners.forEach(({name, logo, url})=> { %>
+            <% partners.forEach(({ attributes: { url, logo, name } })=> { %>
                 <li class="glide__slide">
-                  <a href="<%=url.url %>" class="slide-item" target="_blank">
-                    <img src="<%=logo.url %>" alt="Parceiro - <%=name %>">
+                  <a href="<%=url %>" class="slide-item" target="_blank">
+                    <img src="<%=logo %>" alt="Parceiro - <%=name %>">
                   </a>
                 </li>
             <% }) %>
